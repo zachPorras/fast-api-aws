@@ -12,4 +12,6 @@ async def root():
 
 
 app.include_router(api_router, prefix="/api/v1")
+
+# Lambda will call this handler
 handler = Mangum(app)
